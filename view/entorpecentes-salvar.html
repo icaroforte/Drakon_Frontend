@@ -1,26 +1,64 @@
-<form data-ng-init="vm.initSalvar()" data-ng-submit = "vm.save(vm.entorpecente)">
+<div class="form-group" data-ng-init="vm.initSalvar()">
+	<form data-ng-submit = "vm.save(vm.entorpecente)">
 	
-	Usuário: <input type="text" required="" data-ng-model = "vm.entorpecente.userName"><br>
-	Procedimento: <input type="text" data-ng-model = "vm.entorpecente.procedimento"><br>
-	N° procedimento: <input type="text" data-ng-model = "vm.entorpecente.n_proced"><br>
-	Data: <input type="text" data-ng-model = "vm.entorpecente.data_entrada"><br>
-	Investigado: <input type="text" data-ng-model = "vm.entorpecente.investigado"><br>
-	Substância: <input type="text" data-ng-model = "vm.entorpecente.substancia"><br>
-	Quantidade: <input type="text" data-ng-model = "vm.entorpecente.quant"><br>
-	Unidade: <input type="text" data-ng-model = "vm.entorpecente.und"><br>
-	Laudo: <input type="text" data-ng-model = "vm.entorpecente.laudo"><br>
-	Vara: <input type="text" data-ng-model = "vm.entorpecente.vara"><br>
-	N° Processo: <input type="text" data-ng-model = "vm.entorpecente.n_processo"><br>
-	Lacre: <input type="text" data-ng-model = "vm.entorpecente.lacre"><br>
-	Data de Autorização: <input type="text" data-ng-model = "vm.entorpecente.data_autorizacao"><br>
-	Caixa: <input type="text" data-ng-model = "vm.entorpecente.caixa"><br>
-	Ofício: <input type="text" data-ng-model = "vm.entorpecente.oficio"><br>
-	Delegacia: <input type="text" data-ng-model = "vm.entorpecente.delegacia"><br>
+	<h3>Cadastro</h3>
+
+	<label>Usuário</label>
+	<input class="form-control" name="usuario" type="text" required="" data-ng-model = "vm.entorpecente.userName"><br>
+	
+	<label>Procedimento</label>
+	<input class="form-control" name="procedimento" type="text" data-ng-model = "vm.entorpecente.procedimento"><br>
+	
+	<label>N° procedimento</label>
+	<input class="form-control" name="n_proced" type="text" data-ng-model = "vm.entorpecente.n_proced"><br>
+	
+	<label>Data</label>
+	<input class="form-control" name="data_entrada" type="text" data-ng-model = "vm.entorpecente.data_entrada"><br>
+	
+	<label>Investigado</label>
+	<input class="form-control" name="investigado" type="text" data-ng-model = "vm.entorpecente.investigado"><br>
+	
+	<label>Substância</label>
+	<input class="form-control" name="substancia" type="text" data-ng-model = "vm.entorpecente.substancia"><br>
+	
+	<label>Quantidade</label>
+	<input class="form-control" name="quant" type="text" data-ng-model = "vm.entorpecente.quant"><br>
+	
+	<label>Unidade</label>
+	<input class="form-control" name="und" type="text" data-ng-model = "vm.entorpecente.und"><br>
+	
+	<label>Laudo</label>
+	<input class="form-control" name="laudo" type="text" data-ng-model = "vm.entorpecente.laudo"><br>
+	
+	<label>Vara</label>
+	<input class="form-control" name="vara" type="text" data-ng-model = "vm.entorpecente.vara"><br>
+	
+	<label>N° Processo</label>
+	<input class="form-control" name="n_processo" type="text" data-ng-model = "vm.entorpecente.n_processo"><br>
+	
+	<label>Lacre</label>
+	<input class="form-control" name="lacre" type="text" data-ng-model = "vm.entorpecente.lacre"><br>
+	
+	<label>Data de Autorização</label>
+	<input class="form-control" name="data_autorizacao" type="text" data-ng-model = "vm.entorpecente.data_autorizacao"><br>
+	
+	<label>Caixa</label>
+	<input class="form-control" name="caixa" type="text" data-ng-model = "vm.entorpecente.caixa"><br>
+	
+	<label>Ofício</label>
+	<input class="form-control" name="oficio" type="text" data-ng-model = "vm.entorpecente.oficio"><br>
+	
+	<label>Delegacia</label>
+	<input class="form-control" name="delegacia" type="text" data-ng-model = "vm.entorpecente.delegacia"><br>
 
 
-	<button type="submit">Salvar</button> 
+	<button class="btn btn-info" type="submit">Salvar</button> 
 
 </form>
 <br>
+</div>
 
 <a href="#/entorpecentes/">Voltar</a>
+
+<br><br>
+
