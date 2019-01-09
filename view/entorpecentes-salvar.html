@@ -1,8 +1,26 @@
 <form data-ng-init="vm.initSalvar()" data-ng-submit = "vm.save(vm.entorpecente)">
 	
-	<input type="text" required="" data-ng-model = "vm.entorpecente.userName">
-	<input type="text" data-ng-model = "vm.entorpecente.procedimento">
+	Usuário: <input type="text" required="" data-ng-model = "vm.entorpecente.userName"><br>
+	Procedimento: <input type="text" data-ng-model = "vm.entorpecente.procedimento"><br>
+	N° procedimento: <input type="text" data-ng-model = "vm.entorpecente.n_proced"><br>
+	Data: <input type="text" data-ng-model = "vm.entorpecente.data_entrada"><br>
+	Investigado: <input type="text" data-ng-model = "vm.entorpecente.investigado"><br>
+	Substância: <input type="text" data-ng-model = "vm.entorpecente.substancia"><br>
+	Quantidade: <input type="text" data-ng-model = "vm.entorpecente.quant"><br>
+	Unidade: <input type="text" data-ng-model = "vm.entorpecente.und"><br>
+	Laudo: <input type="text" data-ng-model = "vm.entorpecente.laudo"><br>
+	Vara: <input type="text" data-ng-model = "vm.entorpecente.vara"><br>
+	N° Processo: <input type="text" data-ng-model = "vm.entorpecente.n_processo"><br>
+	Lacre: <input type="text" data-ng-model = "vm.entorpecente.lacre"><br>
+	Data de Autorização: <input type="text" data-ng-model = "vm.entorpecente.data_autorizacao"><br>
+	Caixa: <input type="text" data-ng-model = "vm.entorpecente.caixa"><br>
+	Ofício: <input type="text" data-ng-model = "vm.entorpecente.oficio"><br>
+	Delegacia: <input type="text" data-ng-model = "vm.entorpecente.delegacia"><br>
 
-	<button type="submit">Salvar</button>
+
+	<button type="submit">Salvar</button> 
 
 </form>
+<br>
+
+<a href="#/entorpecentes/">Voltar</a>
