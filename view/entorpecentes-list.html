@@ -5,7 +5,7 @@
     </div>
     <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
-            <input type="search" id="search" value="" class="form-control" placeholder="Pesquisar">
+            <input type="search" id="myInput" value="" class="form-control" placeholder="Pesquisar">
         </div>
     </div>
     <div class="table-responsive">
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-<table class="table" id="table" >   
+<table class="table">   
     <thead>
 		<th>Usuário</th>
         <th>Procedimento</th>
@@ -33,11 +33,11 @@
         <th>Ofício</th>
         <th>Delegacia</th>
 	</thead>
-	<tbody data-ng-repeat="entorpecente in vm.entorpecentes">
+	<tbody data-ng-repeat="entorpecente in vm.entorpecentes" id="myTable">
 		<td>{{entorpecente.userName}}</td>
 	    <td>{{entorpecente.procedimento}}</td>
 	    <td>{{entorpecente.n_proced}}</td>
-        <td>{{entorpecente.data_entrada}}</td>
+	    <td>{{entorpecente.data_entrada}}</td>
         <td>{{entorpecente.investigado}}</td>
         <td>{{entorpecente.substancia}}</td>
         <td>{{entorpecente.quant}}</td>
@@ -54,3 +54,5 @@
 </table>
 
 <a href="#/entorpecentes/salvar">Cadastrar</a>
+
+<script src="js/pesquisa.js"></script>
