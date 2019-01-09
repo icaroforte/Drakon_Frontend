@@ -1,10 +1,43 @@
-<ul data-ng-init = "vm.initList()">
-	<li data-ng-repeat="entorpecente in vm.entorpecentes">
-		{{entorpecente.userName}}
-		{{entorpecente.procedimento}}
-		{{entorpecente.n_proced}}
+    <div class="row" data-ng-init = "vm.initList()">
+        <div class="col-lg-12">
+            <h3>Lista</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <input type="search" id="search" value="" class="form-control" placeholder="Pesquisar">
+        </div>
+    </div>
+    <div class="table-responsive">
+        <div class="col-lg-12">
+            
+        </div>
+    </div>
 
-	</li>
-</ul>
+<table class="table" id="table" >   
+    <thead>
+		<th>Usuário</th>
+        <th>Procedimento</th>
+        <th>Num. Proced.</th>
+        <th>Data</th>
+        <th>Investigado(a)</th>
+        <th>Substância</th>
+        <th>Qtd.</th>
+        <th>Und.</th>
+        <th>Laudo</th>
+        <th>Vara</th>
+        <th>N° Processo</th>
+        <th>Lacre</th>
+        <th>Data Autorização</th>
+        <th>Caixa</th>
+        <th>Ofício</th>
+        <th>Delegacia</th>
+	</thead>
+	<tbody data-ng-repeat="entorpecente in vm.entorpecentes">
+		<td>{{entorpecente.userName}}</td>
+	    <td>{{entorpecente.procedimento}}</td>
+	    <td>{{entorpecente.n_proced}}</td>
+	</tbody>
+</table>
 
-<a href="#/entorpecentes/salvar">Adicionar</a>
+<a href="#/entorpecentes/salvar">Cadastrar</a>
