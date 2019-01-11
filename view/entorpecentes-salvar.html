@@ -1,65 +1,204 @@
+<!--<div id="content-wrapper">
+
+	<div class="container-fluid">
+
+		<div class="form-group" data-ng-init="vm.initSalvar()">
+			<form data-ng-submit = "vm.save(vm.entorpecente)">
+			
+			<h3>Cadastro</h3><br>
+
+			<label>Usuário</label>
+			<input class="form-control" name="usuario" type="text" required="" data-ng-model = "vm.entorpecente.userName"><br>
+			
+			<label>Procedimento</label>
+			<input class="form-control" name="procedimento" type="text" data-ng-model = "vm.entorpecente.procedimento"><br>
+			
+			<label>N° procedimento</label>
+			<input class="form-control" name="n_proced" type="text" data-ng-model = "vm.entorpecente.n_proced"><br>
+			
+			<label>Data</label>
+			<input class="form-control" name="data_entrada" type="text" data-ng-model = "vm.entorpecente.data_entrada"><br>
+			
+			<label>Investigado</label>
+			<input class="form-control" name="investigado" type="text" data-ng-model = "vm.entorpecente.investigado"><br>
+			
+			<label>Substância</label>
+			<input class="form-control" name="substancia" type="text" data-ng-model = "vm.entorpecente.substancia"><br>
+			
+			<label>Quantidade</label>
+			<input class="form-control" name="quant" type="text" data-ng-model = "vm.entorpecente.quant"><br>
+			
+			<label>Unidade</label>
+			<input class="form-control" name="und" type="text" data-ng-model = "vm.entorpecente.und"><br>
+			
+			<label>Laudo</label>
+			<input class="form-control" name="laudo" type="text" data-ng-model = "vm.entorpecente.laudo"><br>
+			
+			<label>Vara</label>
+			<input class="form-control" name="vara" type="text" data-ng-model = "vm.entorpecente.vara"><br>
+			
+			<label>N° Processo</label>
+			<input class="form-control" name="n_processo" type="text" data-ng-model = "vm.entorpecente.n_processo"><br>
+			
+			<label>Lacre</label>
+			<input class="form-control" name="lacre" type="text" data-ng-model = "vm.entorpecente.lacre"><br>
+			
+			<label>Data de Autorização</label>
+			<input class="form-control" name="data_autorizacao" type="text" data-ng-model = "vm.entorpecente.data_autorizacao"><br>
+			
+			<label>Caixa</label>
+			<input class="form-control" name="caixa" type="text" data-ng-model = "vm.entorpecente.caixa"><br>
+			
+			<label>Ofício</label>
+			<input class="form-control" name="oficio" type="text" data-ng-model = "vm.entorpecente.oficio"><br>
+			
+			<label>Delegacia</label>
+			<input class="form-control" name="delegacia" type="text" data-ng-model = "vm.entorpecente.delegacia"><br>
+
+
+			<button class="btn btn-info" type="submit">Salvar</button> 
+
+		</form>
+		<br>
+		</div>
+	</div>
+</div>
+
+
+<a href="#/entorpecentes/">Voltar</a>
+
+<br><br>
+
+
+<p>----------------------------------------------------------------------------</p>
+
+-->
 	<div id="content-wrapper">
 		<div class="container-fluid">
 
 		<div class="form-group" data-ng-init="vm.initSalvar()" align="center">
 
-		<div class="card mb-1" style="width: 40rem;">
+		<div class="card mb-1 cadastro-border" style="width: 40rem;">
 			<form data-ng-submit = "vm.save(vm.entorpecente)">
 			
-			<br><h3>Cadastro</h3><br>
+			<div class="cadastro-header">
+				<h3>Cadastro</h3>
+			</div>
+			<br>
 
-			
-			<label> Usuário</label> 
-			<input class="form-control" name="usuario" type="text" style="width: 80%" required="" data-ng-model = "vm.entorpecente.userName"><br> 
-			
-			 
-			<label>Procedimento</label>
-			<input class="form-control" name="procedimento" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.procedimento"><br>
-			
-			<label>N° procedimento</label>
-			<input class="form-control" name="n_proced" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.n_proced"><br>
-			
-			<label>Data</label>
-			<input class="form-control" name="data_entrada" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.data_entrada"><br>
-			
-			<label>Investigado</label>
-			<input class="form-control" name="investigado" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.investigado"><br>
-			
-			<label>Substância</label>
-			<input class="form-control" name="substancia" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.substancia"><br>
-			
-			<label>Quantidade</label>
-			<input class="form-control" name="quant" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.quant"><br>
-			
-			<label>Unidade</label>
-			<input class="form-control" name="und" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.und"><br>
-			
-			<label>Laudo</label>
-			<input class="form-control" name="laudo" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.laudo"><br>
-			
-			<label>Vara</label>
-			<input class="form-control" name="vara" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.vara"><br>
-			
-			<label>N° Processo</label>
-			<input class="form-control" name="n_processo" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.n_processo"><br>
-			
-			<label>Lacre</label>
-			<input class="form-control" name="lacre" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.lacre"><br>
-			
-			<label>Data de Autorização</label>
-			<input class="form-control" name="data_autorizacao" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.data_autorizacao"><br>
-			
-			<label>Caixa</label>
-			<input class="form-control" name="caixa" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.caixa"><br>
-			
-			<label>Ofício</label>
-			<input class="form-control" name="oficio" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.oficio"><br>
-			
-			<label>Delegacia</label>
-			<input class="form-control" name="delegacia" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.delegacia"><br>
+			<div class="cadastro-label">
+				<label> Usuário</label> 	
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control " name="usuario" type="text" style="width: 80%" required="" data-ng-model = "vm.entorpecente.userName">
+			</div>
 
+			<div class="cadastro-label">
+				<label >Procedimento</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control cadastro-field" name="procedimento" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.procedimento">
+			</div>
+						
+			<div class="cadastro-label">
+				<label>N° procedimento</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="n_proced" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.n_proced">
+			</div>
 
-			<button class="btn btn-info" type="submit">Salvar</button> 
+			<div class="cadastro-label">
+				<label>Data</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="data_entrada" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.data_entrada">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Investigado</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="investigado" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.investigado">
+			</div>
+			
+			<div class="cadastro-label">
+				<label>Substância</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="substancia" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.substancia">
+			</div>
+			
+			<div class="cadastro-label">
+				<label>Quantidade</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="quant" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.quant">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Unidade</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="und" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.und">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Laudo</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="laudo" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.laudo">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Vara</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="vara" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.vara">
+			</div>
+
+			<div class="cadastro-label">
+				<label>N° Processo</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="n_processo" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.n_processo">
+			</div>
+			
+			<div class="cadastro-label">
+				<label>Lacre</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="lacre" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.lacre">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Data de Autorização</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="data_autorizacao" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.data_autorizacao">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Caixa</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="caixa" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.caixa">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Ofício</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="oficio" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.oficio">
+			</div>
+
+			<div class="cadastro-label">
+				<label>Delegacia</label>
+			</div>
+			<div class="cadastro-field">
+				<input class="form-control" name="delegacia" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.delegacia">
+			</div>
+
+			<button class="btn btn-success cadastro-button" type="submit">Salvar</button> 
 
 		</form>
 		<br>
