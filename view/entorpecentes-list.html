@@ -1,78 +1,65 @@
-    <!-- DataTables Example -->
-          <div class="card mb-3" data-ng-init = "vm.initList()">
+ <!-- DataTables Example -->
+          <div class="card mb-3">
             <div class="card-header">
-				<input type="search" id="myInput" value="" class="form-control pesquisa-field-index" placeholder="Pesquisar" style="width: 25%">
             <div class="card-body">
 
               <div class="table-responsive">
 
-                <table class="table table-bordered example" id="example" width="100%" cellspacing="0">
-                  <thead>
-                    <tr align="center">
-                      	<th>Usuário</th>
-				        <th>Procedimento</th>
-				        <th>Num. Proced.</th>
-				        <th>Data</th>
-				        <th>Investigado(a)</th>
-				        <th>Substância</th>
-				        <th>Qtd.</th>
-				        <th>Und.</th>
-				        <th>Laudo</th>
-				        <th>Vara</th>
-				        <th>N° Processo</th>
-				        <th>Lacre</th>
-				        <th>Data Autorização</th>
-				        <th>Caixa</th>
-				        <th>Ofício</th>
-				        <th>Delegacia</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr align="center">
-                      	<th>Usuário</th>
-				        <th>Procedimento</th>
-				        <th>Num. Proced.</th>
-				        <th>Data</th>
-				        <th>Investigado(a)</th>
-				        <th>Substância</th>
-				        <th>Qtd.</th>
-				        <th>Und.</th>
-				        <th>Laudo</th>
-				        <th>Vara</th>
-				        <th>N° Processo</th>
-				        <th>Lacre</th>
-				        <th>Data Autorização</th>
-				        <th>Caixa</th>
-				        <th>Ofício</th>
-				        <th>Delegacia</th>
-                    </tr>
-                  </tfoot>
-                  <tbody data-ng-repeat="entorpecente in vm.entorpecentes" id="myTable" >
-                    <tr>
-                      	<td>{{entorpecente.userName}}</td>
-					    <td>{{entorpecente.procedimento}}</td>
-					    <td>{{entorpecente.n_proced}}</td>
-					    <td>{{entorpecente.data_entrada}}</td>
-				        <td>{{entorpecente.investigado}}</td>
-				        <td>{{entorpecente.substancia}}</td>
-				        <td>{{entorpecente.quant}}</td>
-				        <td>{{entorpecente.und}}</td>
-				        <td>{{entorpecente.laudo}}</td>
-				        <td>{{entorpecente.vara}}</td>
-				        <td>{{entorpecente.n_processo}}</td>
-				        <td>{{entorpecente.lacre}}</td>
-				        <td>{{entorpecente.data_autorizacao}}</td>
-				        <td>{{entorpecente.caixa}}</td>
-				        <td>{{entorpecente.oficio}}</td>
-				        <td>{{entorpecente.delegacia}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="card-footer small text-muted" >Atualizado em: </div>
-          </div>
+    <table id="example" class="table table-bordered table-striped display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Usuário</th>
+		        <th>Procedimento</th>
+		        <th>Num. Proced.</th>
+		        <th>Data</th>
+		        <th>Investigado(a)</th>
+		        <th>Substância</th>
+		        <th>Qtd.</th>
+		        <th>Und.</th>
+		        <th>Laudo</th>
+		        <th>Vara</th>
+		        <th>N° Processo</th>
+		        <th>Lacre</th>
+		        <th>Data Autorização</th>
+		        <th>Caixa</th>
+		        <th>Ofício</th>
+		        <th>Delegacia</th>
+            </tr>
+        </thead>
+    </table>
+      </div>
+    </div>
+  </div>
 
-        </div>
+</div>
 
-<script src="js/pesquisa.js"></script>
+<script>
+
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": {
+            "url": "http://localhost:3000/api/v1/entorpecentes",
+            "dataSrc": ""
+        },
+        "columns": [
+            { "data": "userName" },
+            { "data": "procedimento" },
+            { "data": "n_proced" },
+            { "data": "data_entrada" },
+            { "data": "investigado" },
+            { "data": "substancia" },
+            { "data": "quant" },
+            { "data": "und" },
+            { "data": "laudo" },
+            { "data": "vara" },
+            { "data": "n_processo" },
+            { "data": "lacre" },
+            { "data": "data_autorizacao" },
+            { "data": "caixa" },
+            { "data": "oficio" },
+            { "data": "delegacia" }
+        ]
+    } );
+} );
+
+</script>
