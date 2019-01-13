@@ -385,6 +385,9 @@ body.sidebar-toggled footer.sticky-footer {
   text-align: left;
   margin-left: 65px;
 }
+.cadastro-label-padding{
+  margin-top:-15px;
+}
 .cadastro-field{
   margin-top: -5px;
   margin-bottom: 10px;
@@ -395,6 +398,28 @@ body.sidebar-toggled footer.sticky-footer {
 }
 .cadastro-button{
   margin-top: 13px;
+}
+.cadastro-radio{
+  margin-left: 35px;
+  margin-bottom: 5px;
+}
+.cadastro-select{
+  margin-top: -64px;
+  margin-left: 0px;
+  width: 25%;
+}
+.cadastro-quantidade{
+  margin-left:-350px;
+  width: 25%;
+}
+
+.cadastro-date{
+  width: 20%;
+  margin-left:-382px;
+}
+
+.bootstrap-select ul.dropdown-menu li:first-child {
+    display: none;
 }
 
 .back-to-top {
