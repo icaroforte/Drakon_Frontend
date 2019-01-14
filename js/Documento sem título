@@ -1,0 +1,5 @@
+$('#submitBtn').on('click', function() {
+    if ($("#formEntorpecentes").valid()) {
+        console.log("teste");
+    }
+});

@@ -4,10 +4,10 @@
 		<div class="form-group" data-ng-init="vm.initSalvar()" align="center">
 
 		<div class="card mb-1 cadastro-border" style="width: 40rem;">
-			<form data-ng-submit = "vm.save(vm.entorpecente)">
+			<form id="formEntorpecentes" data-ng-submit = "vm.save(vm.entorpecente)">
 			
 			<div class="cadastro-header">
-				<h3>Cadastro</h3>
+				<img src="/vendor/images/Black_dragon.png" class="cadastro-header-image"> Cadastro</a> 
 			</div>
 			<br>
 
@@ -15,28 +15,28 @@
 				<label> Usuário</label> 	
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control " name="usuario" type="text" style="width: 80%" required="" data-ng-model = "vm.entorpecente.userName">
+				<input class="form-control " name="usuario" type="text" required="" data-ng-model = "vm.entorpecente.userName">
 			</div>
 
 			<div class="cadastro-label">
 				<label >Procedimento</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control cadastro-field" name="procedimento" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.procedimento">
+				<input class="form-control" name="procedimento" type="text" data-ng-model = "vm.entorpecente.procedimento">
 			</div>
 						
 			<div class="cadastro-label">
 				<label>N° procedimento</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="n_proced" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.n_proced">
+				<input class="form-control" name="n_proced" type="text" data-ng-model = "vm.entorpecente.n_proced">
 			</div>
 
 			<div class="cadastro-label">
 				<label>Investigado</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="investigado" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.investigado">
+				<input class="form-control" name="investigado" type="text" data-ng-model = "vm.entorpecente.investigado">
 			</div>
 
 			<div class="cadastro-label">
@@ -104,28 +104,28 @@
 				<label>Laudo</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="laudo" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.laudo">
+				<input class="form-control" name="laudo" type="text" data-ng-model = "vm.entorpecente.laudo">
 			</div>
 
 			<div class="cadastro-label">
 				<label>Vara</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="vara" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.vara">
+				<input class="form-control" name="vara" type="text" data-ng-model = "vm.entorpecente.vara">
 			</div>
 
 			<div class="cadastro-label">
 				<label>N° Processo</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="n_processo" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.n_processo">
+				<input class="form-control" name="n_processo" type="text" data-ng-model = "vm.entorpecente.n_processo">
 			</div>
 			
 			<div class="cadastro-label">
 				<label>Lacre</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="lacre" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.lacre">
+				<input class="form-control" name="lacre" type="text" data-ng-model = "vm.entorpecente.lacre">
 			</div>
 
 			<div class="cadastro-label">
@@ -139,24 +139,24 @@
 				<label>Caixa</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="caixa" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.caixa">
+				<input class="form-control" name="caixa" type="text" data-ng-model = "vm.entorpecente.caixa">
 			</div>
 
 			<div class="cadastro-label">
 				<label>Ofício</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="oficio" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.oficio">
+				<input class="form-control" name="oficio" type="text" data-ng-model = "vm.entorpecente.oficio">
 			</div>
 
 			<div class="cadastro-label">
 				<label>Delegacia</label>
 			</div>
 			<div class="cadastro-field">
-				<input class="form-control" name="delegacia" type="text" style="width: 80%" data-ng-model = "vm.entorpecente.delegacia">
+				<input class="form-control" name="delegacia" type="text" data-ng-model = "vm.entorpecente.delegacia">
 			</div>
 
-			<button class="btn btn-success cadastro-button" type="submit">Salvar</button> 
+			<button id="submitBtn" data-target="#confirm-submit" class="btn btn-outline-success cadastro-button" type="submit">Salvar</button> 
 
 		</form>
 		<br>
@@ -165,7 +165,30 @@
    </div>
 </div>
 
+<div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+	        <h5 class="modal-title">Confirmar</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+            <div class="modal-body" align="center">
+                Registro cadastrado com sucesso!
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-success cadastro-button" type="button" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="js/datapicker.js"></script>
 
+<script src="js/modal-submit.js"></script>
 
 <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+
+<script src="vendor/jquery/jquery.validate.min.js"></script>
