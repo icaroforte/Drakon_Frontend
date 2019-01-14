@@ -3,3 +3,4 @@ $('#submitBtn').on('click', function() {
         $('#confirm-submit').modal('toggle');
     }
 });
+

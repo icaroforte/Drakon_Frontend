@@ -419,20 +419,13 @@ body.sidebar-toggled footer.sticky-footer {
   margin-left:-350px;
   width: 25%;
 }
-
 .cadastro-date{
   width: 25%;
   margin-left:-382px;
 }
-
-.cadastro-header{
-
-}
-
 .bootstrap-select ul.dropdown-menu li:first-child {
     display: none;
 }
-
 .back-to-top {
     cursor: pointer;
     position: fixed;
