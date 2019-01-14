@@ -1,0 +1,20 @@
+{
+  "name": "drakon",
+  "version": "1.0.0",
+  "description": "Repositório do frontend do projeto de P1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johannydls/front_p1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {}
+}
