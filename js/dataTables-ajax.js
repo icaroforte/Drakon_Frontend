@@ -9,7 +9,7 @@ $(document).ready(function() {
     "targets": "_all"
   }],
         "columns": [
-            { "data": "userName" },
+            { "visible": false },
             { "data": "procedimento" },
             { "data": "n_proced" },
             { "data": "data_entrada" },
